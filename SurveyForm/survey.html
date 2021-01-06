@@ -14,7 +14,51 @@
 
 </head>
 <body>
-    
+    <h1 id="title">Survey</h1>
+    <p id="description">Short Description</p>
+    <form action="" id="survey-form">
+        
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" required placeholder="Enter your Name">
+        <br>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Enter your Email">
+        <br>
+
+        <label for="number" id="number-label" >Age</label>
+        <input type="number" name="number" id="number" min="6" max="99" placeholder="Enter your Age">
+        <br>
+
+        <label for="dropdown"> Still to be decided</label>
+        <select name="dropdown" id="dropdown">
+            <option value="1">First selection</option>
+            <option value="2">Second selection</option>
+        </select>
+        <br>
+        
+        <p>text will be here</p>
+        <label> <input type="radio" value="1st" name="radioButtons" >1</label>
+        <label> <input type="radio" name="radioButtons" value="2nd">2</label>
+        <label> <input type="radio" name="radioButtons" value="3rd">3</label>
+        <br>
+
+        <p>text will be here</p>
+        <label> <input type="checkbox" name="firstCHB" value="1st">1</label>
+        <label> <input type="checkbox" name="secondCHB" value="2nd">2</label>
+        <label> <input type="checkbox" name="thirdHB" value="3rd">3</label>
+        <label> <input type="checkbox" name="forthCHB" value="4th">4</label>
+        <label> <input type="checkbox" name="fifthCHB" value="5th">5</label>
+        <label> <input type="checkbox" name="sixthshCHB" value="6th">6</label>
+        <label> <input type="checkbox" name="seventhCHB" value="7th">7</label>
+        <br>
+
+        <p>text area</p>
+        <textarea name="textarea" id="comments" cols="30" rows="10" placeholder="Type any comments here..."></textarea>
+        <br>
+
+        <button id="submit">Submit</button>
+    </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
