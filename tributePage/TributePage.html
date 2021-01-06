@@ -9,32 +9,74 @@
   <meta name="author" content="SitePoint">
 
   <style>
+
       #main {
-        background-color: aqua;
-        height: auto;
-        width: auto;
-      }
-      #title{
-        background-color: blue ;
+        background-color:cornsilk;
         text-align: center;
-        width: auto;
+        font-size: 15px;
       }
+
+      #title{
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        font-size: 40px;
+      }
+
+      @media (max-width: 460px){
+          #title{
+              font-size: 35px;
+              line-height: 12px;
+          }
+      }
+
+      #title-text{
+          font-size: 20px;
+      }
+
       #img-div{
-          background-color: brown;
+          background-color: bisque;
           width: auto;
           height: auto;
           display: flex;
           align-items: center;
           flex-direction: column;
+          margin: 10px 65px 15px 65px;
       }
+
       #image {
-        height: auto;
+        max-height: 100%;
         max-width: 100%;
+        
       }
-      #tribute-info{
-          width: auto;
-          text-align: center;
-          background-color: chartreuse;
+
+      #img-caption {
+          font-size: 20px;
+          margin: 15px auto 15px auto;
+      }
+
+      #tribute-info {
+          background-color: azure;
+          margin: 10px 30px 0px 30px;
+          font-size: 15px;
+          
+      }
+      #tribute-info h2{
+          padding-top: 20px;
+          font-size: 30px;
+      }
+      #tribute-info ul {
+          text-align: justify;
+          margin: auto 25% auto 25%;
+          
+      }
+      #tribute-info ul li {
+          padding-bottom: 20px;
+      }
+
+      #tribute-info p {
+        font-size: 25px;
       }
 
   </style>
@@ -44,21 +86,53 @@
 <body>
     <div id="main" >
 
-        <h1 id="title">This is the title </h1>
+        <h1 id="title">Amelia Mary Earhart </h1>
+        <p id="title-text">American aviation pioneer and author</p>
         
         <figure id="img-div">
-            <img src="https://www.google.rs/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="This is image of that man" id="image">
-            <figcaption id="img-caption">This is text about the image above</figcaption>
+            <img src="https://static01.nyt.com/images/2019/08/18/science/18conversation/12SCI-EARHART1-promo-superJumbo.jpg" alt="Image of Amelia Airhearth" id="image">
+            <figcaption id="img-caption">Earhart was the first female aviator to fly solo across the Atlantic Ocean.</figcaption>
         </figure>
         
-        
-        
         <section id="tribute-info">
-            <h2>This is a text about that person</h2>
+
+            <h2>Information about Amelia's life</h2>
+            
             <ul>
-                <li>THis is extra information</li>
+                <li>She was born in Atchison, Kansas, in the home of her maternal grandfather, Alfred Gideon Otis (1827–1912), who was a former federal judge, 
+                    the president of the Atchison Savings Bank and a leading citizen in the town. Amelia was the second child of the marriage after an infant was 
+                    stillborn in August 1896. She was of part German descent. Alfred Otis had not initially favored the marriage and was not satisfied with 
+                    Edwin's progress as a lawyer.</li>
+                <li>A spirit of adventure seemed to abide in the Earhart children, with the pair setting off daily to explore their neighborhood.
+                    As a child, Earhart spent long hours playing with sister Pidge, climbing trees, hunting rats with a rifle and "belly-slamming"
+                    her sled downhill. Although the love of the outdoors and "rough-and-tumble" play was common to many youngsters, some biographers
+                    have characterized the young Earhart as a tomboy.</li>
+                <li>Sisters Amelia and Muriel (who went by her middle name from her teens on) remained with their grandparents in Atchison while their
+                     parents moved into new, smaller quarters in Des Moines. During this period, the Earhart girls received home-schooling from their 
+                     mother and governess. Amelia later recounted that she was "exceedingly fond of reading" and spent countless hours in the large 
+                     family library.</li>
+                <li>At about that time, Earhart and a young woman friend visited an air fair held in conjunction with the Canadian National Exhibition
+                     in Toronto. One of the highlights of the day was a flying exhibition put on by a World War I ace. The pilot overhead spotted Earhart 
+                     and her friend, who were watching from an isolated clearing, and dived at them. "I am sure he said to himself, 'Watch me make them scamper,'" 
+                     she said. Earhart stood her ground as the aircraft came close. "I did not understand it at the time," she said, "but I believe that little red 
+                     airplane said something to me as it swished by."</li>
+                <li>Throughout the early 1920s, following a disastrous investment in a failed gypsum mine, Earhart's inheritance from her grandmother, 
+                    which was now administered by her mother, steadily diminished until it was exhausted. Consequently, with no immediate prospects for 
+                    recouping her investment in flying, Earhart sold the "Canary" as well as a second Kinner and bought a yellow Kissel "Speedster" 
+                    two-passenger automobile, which she named the "Yellow Peril".</li>
+                <li>Following her parents' divorce in 1924, she drove her mother in the "Yellow Peril" on a transcontinental trip from California with stops 
+                    throughout the West and even a jaunt up to Banff, Alberta. The meandering tour eventually brought the pair to Boston, Massachusetts, 
+                    where Earhart underwent another sinus operation which was more successful. After recuperation, she returned to Columbia University for 
+                    several months but was forced to abandon her studies and any further plans for enrolling at the Massachusetts Institute of Technology, 
+                    because her mother could no longer afford the tuition fees and associated costs.</li>
+                <li>After Charles Lindbergh's solo flight across the Atlantic in 1927, Amy Guest (1873–1959) expressed interest in being the first woman to fly 
+                    (or be flown) across the Atlantic Ocean. After deciding that the trip was too perilous for her to undertake, she offered to sponsor the 
+                    project, suggesting that they find "another girl with the right image". While at work one afternoon in April 1928, Earhart got a phone 
+                    call from Capt. Hilton H. Railey, who asked her, "Would you like to fly the Atlantic?"</li>
             </ul>
-            <a href="" id="tribute-link" target="_blank">This is a link</a>
+
+            <p>For more information about her life you can see her's <a href="https://en.wikipedia.org/wiki/Amelia_Earhart" id="tribute-link" target="_blank">wiki page</a>.</p>
+
         </section>
 
     </div>
