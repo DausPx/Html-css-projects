@@ -9,12 +9,127 @@
     <meta name="author" content="SitePoint">
 
 <style>
+    html{
+        font-size: 10px;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    #header{
+        display: flex;
+        overflow: hidden;
+        background-color: #c5aa6a;
+        width: 100vw;
+        height: 55px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+    }
+
+    #header-img{
+        height: auto;
+        width: 10vw;
+        margin-left: 5vw;
+    }
+
+    nav {
+        width: 100vw;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    nav ul li {
+        list-style-type: none;
+        margin: 0 2vw;
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+        font-family: monospace;
+    }
+
+    #content{
+        width: 100%;
+        height: auto;
+    }
+
+    #home{
+    width: 100%;
+    height: 400px;
+    background-color: green;
+    }
+
+    #video {
+        width: 100%;
+        height: 600px;
+        background-color: rgb(46, 4, 161);
+    }
+
+    #product-info {
+        width: 100%;
+        height: 600px;
+        background-color: rgb(161, 4, 64);
+    }
+    
+    #footer {
+        width: 100%;
+        height: 80px;
+        background-color: rgb(4, 161, 12);
+    }
 
 </style>
 
 </head>
 <body>
-    
+    <header id="header">
+        <img src="https://www.google.rs/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="Company Logo" id="header-img">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#home">Home</a></li>
+       
+                <li><a class="nav-link" href="#video">Stuff</a></li>
+       
+                <li><a class="nav-link" href="#product-info">Blog</a></li>
+       
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" name="email" id="email" placeholder="Subscribe to our newsletter">
+                
+                <input type="submit" name="submit" id="submit">
+
+            </form>
+        </section>
+        
+        <section id="video">
+            <video src="" id="video">
+                <iframe src="" frameborder="0"></iframe>
+
+            </video>
+        </section>
+
+        <section id="product-info">
+
+        </section>
+    </main>
+
+    <footer id="footer">
+
+    </footer>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
