@@ -30,6 +30,10 @@
         top: 0;
     }
 
+    @media (max-width: 600px){
+
+    }
+
     #header-img{
         height: auto;
         width: 10vw;
@@ -63,15 +67,26 @@
     }
 
     #home{
-    width: 100%;
-    height: 400px;
-    background-color: green;
+        width: 100%;
+        height: 400px;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
     }
 
-    #video {
+    #form {
+        
+    }
+
+    #video-wrap {
         width: 100%;
         height: 600px;
         background-color: rgb(46, 4, 161);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #product-info {
@@ -114,11 +129,9 @@
             </form>
         </section>
         
-        <section id="video">
-            <video src="" id="video">
-                <iframe src="" frameborder="0"></iframe>
-
-            </video>
+        <section id="video-wrap">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0" 
+            frameborder="0" allowfullscreen></iframe>
         </section>
 
         <section id="product-info">
