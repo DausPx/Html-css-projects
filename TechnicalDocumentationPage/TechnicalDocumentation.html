@@ -9,12 +9,151 @@
     <meta name="author" content="SitePoint">
 
 <style>
+    html{
+        font-size: 10px;
+    }
+
+    body{
+        font-size: 15px;
+        line-height: 1.5;
+        background-color: thistle;
+        color: black;
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+
+    #navbar{
+        position: fixed;
+        min-width: 250px;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 100%;
+        border-right: solid;
+        border-color: rgba(0, 22, 22, 0.4);
+    }
+
+    header {
+        color: black;
+        margin: 10px;
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: thin;
+    }
+    
+    #main-doc header {
+        text-align: left;
+        margin: 0px;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 270px;
+        padding: 20px;
+        margin-bottom: 110px;
+    }
+
+    @media (max-width: 800){
+
+    }
+
+    @media (max-width: 400px){
+
+    }
 
 </style>
 
 </head>
 <body>
+    <nav id="navbar">
+        <header>hmain</header>
+        <ul>
+            <li><a href="#1" class="nav-link">1</a></li>
+
+            <li><a href="#2" class="nav-link">2</a></li>
+
+            <li><a href="#3" class="nav-link">3</a></li>
+
+            <li><a href="#4" class="nav-link">4</a></li>
+
+            <li><a href="#5" class="nav-link">5</a></li>
+
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="1">
+            <header>1</header>
+            
+            <article>
+                <p>p</p>
+
+                <code>c</code>
     
+                <p>p</p>
+
+            </article>
+        </section>
+        
+        <section class="main-section" id="2">
+            <header>2</header>
+            
+            <article>
+                <p>p</p>
+
+                <code>c</code>
+    
+                <p>p</p>
+                
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </article>
+        </section>
+        
+        <section class="main-section" id="3">
+            <header>3</header>
+            
+            <article>
+                <p>p</p>
+
+                <code>c</code>
+    
+                <p>p</p>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="4">
+            <header>4</header>
+
+            <article>
+                <p>p</p>
+
+                <code>c</code>
+    
+                <p>p</p>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="5">
+            <header>5</header>
+            
+            <article>
+                <p>p</p>
+
+                <code>c</code>
+    
+                <p>p</p>
+
+            </article>
+        </section>
+    </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
