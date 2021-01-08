@@ -9,6 +9,7 @@
     <meta name="author" content="SitePoint">
 
 <style>
+    #4abdac #f78733 #dfdce3
     html{
         font-size: 10px;
     }
@@ -17,12 +18,14 @@
         margin: 0;
         padding: 0;
         font-size: 15px;
+        background-color:#4abdac;
+        color: white;
     }
 
     #header{
         display: flex;
         overflow: hidden;
-        background-color: #c5aa6a;
+        background-color: #fc4a1a;
         width: 100vw;
         height: 55px;
         align-items: center;
@@ -57,8 +60,8 @@
 
     .nav-link {
         text-decoration: none;
-        color: black;
         font-family: monospace;
+        color: white;
     }
 
     #content{
@@ -68,8 +71,7 @@
 
     #home{
         width: 100%;
-        height: 400px;
-        background-color: green;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -77,28 +79,86 @@
     }
 
     #form {
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #form p {
+        font-size: 3rem;
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+    }
+    #form #email {
+        display: block;
+        margin: 10px 10%;
+        border: 0;
+        padding: 10px 5px;
+        border-radius: 10px;
+        background-color: lavender;
+    }
+
+    .button {
+        padding: 8px 30px;
+        font-size: 2rem;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #f78733;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px #ffffff;
+        margin: 5px 30% 0px 30%;
+    }
+
+    .button:hover {background-color: #f78733}
+
+    .button:active {
+        background-color: #f78733;
+        box-shadow: 0 3px #ffffff;
+        transform: translateY(4px);
     }
 
     #video-wrap {
         width: 100%;
         height: 600px;
-        background-color: rgb(46, 4, 161);
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+
     #product-info {
         width: 100%;
         height: 600px;
         background-color: rgb(161, 4, 64);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    #product {
+        width: 250px;
+        height: 400px;
+        background-color: teal;
+        margin: 10px;
     }
     
     #footer {
         width: 100%;
-        height: 80px;
+        height: 50px;
         background-color: rgb(4, 161, 12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer p {
+        margin: 0;
+        color: black;
     }
 
 </style>
@@ -107,13 +167,14 @@
 <body>
     <header id="header">
         <img src="https://www.google.rs/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="Company Logo" id="header-img">
+        
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#home">Home</a></li>
        
-                <li><a class="nav-link" href="#video">Stuff</a></li>
+                <li><a class="nav-link" href="#video">Video</a></li>
        
-                <li><a class="nav-link" href="#product-info">Blog</a></li>
+                <li><a class="nav-link" href="#product-info">Product</a></li>
        
             </ul>
         </nav>
@@ -122,25 +183,40 @@
     <main id="content">
         <section id="home">
             <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <input type="email" name="email" id="email" placeholder="Subscribe to our newsletter">
+                <p>Subscribe to our newsletter</p>
+
+                <input type="email" name="email" id="email" placeholder="Your email">
                 
-                <input type="submit" name="submit" id="submit">
+                <input type="submit" name="submit" id="submit" class="button">
 
             </form>
         </section>
         
         <section id="video-wrap">
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0" 
-            frameborder="0" allowfullscreen></iframe>
+            frameborder="0" allowfullscreen>
+
+            </iframe>
         </section>
 
         <section id="product-info">
+            <div id="product">
 
+            </div>
+            
+            <div id="product">
+
+            </div>
+            
+            <div id="product">
+
+            </div>
+            
         </section>
     </main>
 
     <footer id="footer">
-
+        <p>Copyright: DausPX 2020</p>
     </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
