@@ -23,6 +23,7 @@
             line-height: 1.5;
             font-family: "Open Sans" ;
             width: 100%;
+            background-color: #dee4e7;
         }
 
         nav {
@@ -30,7 +31,7 @@
             position: fixed;
             top: 0; 
             overflow: hidden;
-            background-color: whitesmoke;
+            background-color: #222222;
         }
 
         nav ul {
@@ -48,7 +49,11 @@
 
         .nav-link {
             text-decoration: none;
-            color: black;
+            color: #0071bc;
+        }
+
+        .nav-link:hover{
+            opacity: 0.7;
         }
         
         #welcome-section {
@@ -94,15 +99,93 @@
 
         #projects{
             width: 100%;
-            height: 600px;
+            height: 500px;
 
-            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
+        #projects h2{
+            color: black;
+        }
+
+        .projects-wraper{
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            margin: 1% 1%;
+            width: 250px;
+            height: 330px;
+            border: 1px solid gray;
+
+            display: flex;
+            flex-direction: column;
+            background-color: #37474f;
+        }
+
+        .project-image{
+            padding: 1vh 1vh;
+        }
+
+        .project-image img {
+            max-width: 100%;
+        }
+
+        .project-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            text-align: center;
+            margin: 0 0 1vh 0;
+        }
+
+        .project-info p {
+            margin: 0 0 1.5vh 0;
+            color: #b0bec5;
+
+        }
+
+        .project-info a {
+            text-decoration: none;
+            padding: 5px;
+            border: none;
+            outline: 0;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        .project-info a:hover {
+            opacity: 0.7;
+        }
+
+        #footer{
+            width: 100%;
+            height: 50px;
+            
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
+        @media (max-width:800px){
+            #projects{
+                height: auto;
+            }
+        }
     </style>
 
 </head>
@@ -126,15 +209,54 @@
     </section>
 
     <section id="projects">
-        <div class="project-wraper project-tile">
-            <p class="project-title">Project title</p>
-            <a href="https://github.com/DausPx/Html-css-projects/blob/master/PersonalPortfolioPage/Portfolio.html">page</a>
+        <h2>Check out some of my projects:</h2>
+        <div class="projects-wraper">
+            <div class="project-card project-tile">
+                <div class="project-image">
+                    <img src="https://e-z-o.com/assets/img/projects/project-13.jpg">
+                </div>
+                <div class="project-info">
+                    <p class="project-title">Portfolio page</p>
+                    <a href="https://github.com/DausPx/Html-css-projects/blob/master/PersonalPortfolioPage/Portfolio.html" target="_blank">More info</a>
+                </div>
+            </div>
+
+            <div class="project-card project-tile">
+                <div class="project-image">
+                    <img src="https://e-z-o.com/assets/img/projects/project-13.jpg">
+                </div>
+                <div class="project-info">
+                    <p class="project-title">Landing page</p>
+                    <a href="https://github.com/DausPx/Html-css-projects/tree/master/productLandingPage" target="_blank">More info</a>
+                </div>
+            </div>
+
+            <div class="project-card project-tile">
+                <div class="project-image">
+                    <img src="https://e-z-o.com/assets/img/projects/project-13.jpg">
+                </div>
+                <div class="project-info">
+                    <p class="project-title">Survey form</p>
+                    <a href="https://github.com/DausPx/Html-css-projects/tree/master/SurveyForm" target="_blank">More info</a>
+                </div>
+            </div>
+
+            <div class="project-card project-tile">
+                <div class="project-image">
+                    <img src="https://e-z-o.com/assets/img/projects/project-13.jpg">
+                </div>
+                <div class="project-info">
+                    <p class="project-title">Technical Documentation Page</p>
+                    <a href="https://github.com/DausPx/Html-css-projects/tree/master/TechnicalDocumentationPage" target="_blank">More info</a>
+                </div>
+            </div>
         </div>
+        
 
     </section>
 
     <footer id="footer">
-        
+        <p>Copyrights: @Dauspx </p>
     </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
